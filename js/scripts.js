@@ -5,21 +5,61 @@ var returnNumber = function(userInput) {
   var userInput = parseInt($("#input").val());
   var userInputSplit = userInput.toString().split("");
 
-// number input change
-  var multiConvert = function(userInput) {
-    var userInputSplit = userInput.toString().split("");
-    for (i = 0; i < userInputSplit.length; i++) {
-      if (userInputSplit[i] % "3" === 0) {
-        return (userInputSplit[i] = "Ping");
-      } else if (userInputSplit[i] % "5" === 0) {
-        return (userInputSplit[i] = "Pong");
-      } else if (userInputSplit[i] % "15" === 0) {
-        return (userInputSplit[i] = "Ping-Pong");
-      } else {
-        return userInput;
-      }
+  var count = function (x, y) {
+    var start = 0;
+    var y = userInput
+    var numbers = [];
+    for (var i = 0; i < y; i++) {
+      numbers.push(i);
     }
+    return numbers;
   }
+
+  // is a number?
+  userInputSplit.forEach(function(number){
+    var numQuery = numbersArray.indexOf(number);
+    if (numQuery === -1) {
+      isNumber = false;
+    }
+  });
+
+  if (!isNumber) {
+    return "Your input is invalid. Please only enter numbers";
+  } else {
+    return "Your number is " + count(userInput);
+  }
+};
+
+// frontend
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    var userInput = parseInt($("#input").val());
+    var result = returnNumber(userInput);
+    $("#answer").text(result);
+  });
+});
+
+
+
+
+
+
+
+// number input change
+  // var multiConvert = function(userInput) {
+  //   for (i = 0; i < userInput.length; i++) {
+  //     if (userInput[i] % 3 === 0) {
+  //       return (userInput[i] = "Ping");
+  //     } else if (userInput[i] % 5 === 0) {
+  //       return (userInput[i] = "Pong");
+  //     } else if (userInput[i] % 15 === 0) {
+  //       return (userInput[i] = "Ping-Pong");
+  //     } else {
+  //       return userInput;
+  //     }
+  //   }
+  // }
 
   // var singleConvert = function(userInput) {
   //   var singleDigit = parseInt(userInputSplit[userInputSplit.length -1]);
@@ -33,28 +73,3 @@ var returnNumber = function(userInput) {
   //     return userInput;
   //   }
   // }
-
-  // is a number?
-  userInputSplit.forEach(function(number){
-    var numQuery = numbersArray.indexOf(number);
-    if (numQuery === -1) {
-      isNumber = false;
-    }
-  });
-
-  if (!isNumber) {
-    return "Your input is invalid. Please only enter numbers";
-  } else {
-    return "Your number is " + multiConvert(userInput);
-  }
-};
-
-// frontend
-$(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
-    var userInput = parseInt($("#input").val());
-    var result = returnNumber(userInput);
-    $("#answer").text(result);
-  });
-});
