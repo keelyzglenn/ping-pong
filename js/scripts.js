@@ -16,20 +16,19 @@ var returnNumber = function(userInput) {
   }
 
 // division to strings
-var multiConvert = function(userInput) {
-  var counting = [];
-  for (i = 0; i < userInput.length; i++) {
-    if (userInput[i] % 3 === 0) {
-      counting.push("Ping");
-    } else if (userInput[i] % 5 === 0) {
-      counting.push("Ping");
-    } else if (userInput[i] % 15 === 0) {
-      counting.push("Ping");
+  var strings = [];
+  for (var j = 1; j <= userInput; j++) {
+    if (j % 15 === 0) {
+      strings.push("ping-pong");
+    } else if(j % 5 === 0) {
+      strings.push("Pong");
+    } else if(j % 3 === 0) {
+      strings.push("Ping")
     } else {
-      counting,push(i);
+      strings.push(j);
       }
-    }
   }
+
   // is a number?
   userInputSplit.forEach(function(number){
     var numQuery = numbersArray.indexOf(number);
@@ -41,7 +40,7 @@ var multiConvert = function(userInput) {
   if (!isNumber) {
     return "Your input is invalid. Please only enter numbers";
   } else {
-    return "Your number is " + multiConvert(userInput);
+    return "Your number is " + strings;
   }
 };
 
@@ -59,6 +58,22 @@ $(document).ready(function() {
 
 
 
+
+
+// number input change
+  // var multiConvert = function(userInput) {
+  //   for (i = 0; i < userInput.length; i++) {
+  //     if (userInput[i] % 3 === 0) {
+  //       return (userInput[i] = "Ping");
+  //     } else if (userInput[i] % 5 === 0) {
+  //       return (userInput[i] = "Pong");
+  //     } else if (userInput[i] % 15 === 0) {
+  //       return (userInput[i] = "Ping-Pong");
+  //     } else {
+  //       return userInput;
+  //     }
+  //   }
+  // }
 
   // var singleConvert = function(userInput) {
   //   var singleDigit = parseInt(userInputSplit[userInputSplit.length -1]);
