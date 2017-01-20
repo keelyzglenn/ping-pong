@@ -5,14 +5,31 @@ var returnNumber = function(userInput) {
   var userInput = parseInt($("#input").val());
   var userInputSplit = userInput.toString().split("");
 
+// counting between numbers
   var count = function (x, y) {
     var y = userInput
     var numbers = [];
     for (var i = 1; i < y; i++) {
       numbers.push(i);
     }
-    return numbers;
+    return numbers ;
   }
+
+// division to strings
+  var strings = [];
+  for (var j = 1; j <= userInput; i++) {
+    if (j % 15 === 0) {
+      strings.push("ping-pong");
+    } if else (j % 5 === 0) {
+      strings.push("Pong");
+    } if else (j % 3 === 0) {
+      strings.push("Ping")
+    } else {
+      stirngs.push(i);
+    }
+  }
+
+
 
   // is a number?
   userInputSplit.forEach(function(number){
