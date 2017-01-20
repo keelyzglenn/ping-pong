@@ -5,19 +5,16 @@ var returnNumber = function(userInput) {
   var userInput = parseInt($("#input").val());
   var userInputSplit = userInput.toString().split("");
 
-
-
 // number input change
   var multiConvert = function(userInput) {
-    var answer = [];
-    var anyDigit = userInputSplit;
-    for (i = 0; i < anyDigit.length; i++) {
-      if (anyDigit[i] % "3" === 0) {
-        return anyDigit[i] = "Ping";
-      }  else if (anyDigit[i] % "5" === 0) {
-        return anyDigit[i] = "Pong";
-      } else if (anyDigit[i] % "15" === 0) {
-        return anyDigit[i] = "Ping-Pong";
+    var userInputSplit = userInput.toString().split("");
+    for (i = 0; i < userInputSplit.length; i++) {
+      if (userInputSplit[i] % "3" === 0) {
+        return (userInputSplit[i] = "Ping");
+      } else if (userInputSplit[i] % "5" === 0) {
+        return (userInputSplit[i] = "Pong");
+      } else if (userInputSplit[i] % "15" === 0) {
+        return (userInputSplit[i] = "Ping-Pong");
       } else {
         return userInput;
       }
