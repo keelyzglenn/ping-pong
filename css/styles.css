@@ -1,0 +1,35 @@
+#intro {
+  text-align: center;
+  margin: 100px;
+  padding: 300px;
+  background-image: url("../img/office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#answer {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+}
+ .next {
+   margin: 50px;
+ }
+
+.main {
+  display: none;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding: 300px;
+  background-image: url("../img/table.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

@@ -40,12 +40,18 @@ var returnNumber = function(userInput) {
   if (!isNumber) {
     return "Your input is invalid. Please only enter numbers";
   } else {
-    return  pingz ;
+    return pingz;
   }
 };
 
 // frontend
 $(document).ready(function() {
+  $(".next").click(function () {
+    $("#intro").fadeOut(function(){
+      $(".main").fadeIn();
+    });
+  });
+
   $("form").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("#input").val());
