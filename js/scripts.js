@@ -15,17 +15,17 @@ var returnNumber = function(userInput) {
     return numbers ;
   }
 
-// division to strings
-  var strings = [];
+// changing to words
+  var pingz = [];
   for (var j = 1; j <= userInput; j++) {
     if (j % 15 === 0) {
-      strings.push("ping-pong");
+      pingz.push("Ping-Pong");
     } else if(j % 5 === 0) {
-      strings.push("Pong");
+      pingz.push("Pong");
     } else if(j % 3 === 0) {
-      strings.push("Ping")
+      pingz.push("Ping")
     } else {
-      strings.push(j);
+      pingz.push(j);
       }
   }
 
@@ -40,7 +40,7 @@ var returnNumber = function(userInput) {
   if (!isNumber) {
     return "Your input is invalid. Please only enter numbers";
   } else {
-    return "Your number is " + strings;
+    return  pingz ;
   }
 };
 

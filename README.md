@@ -45,7 +45,7 @@ HTML, CSS (Bootstrap and custom), Javascript (jQuery): using arrays and looping 
 * input: 6
 * output: [1, 2, Ping, 4, Pong, 6]
 
-**Program will return all numbers divisible by 15 with "Ping Pong**
+**Program will return all numbers divisible by 15 with "Ping Pong"**
 * input: 16
 * output: [1,2,Ping,4,Pong,Ping,7,8,Ping,Pong,11,Ping,13,14,Ping-Pong,16]
 
