@@ -25,6 +25,30 @@ HTML, CSS (Bootstrap and custom), Javascript (jQuery): using arrays and looping 
 
 ## Specifications
 
+**Program will take users input from 1-infinity**
+* input: 1, 3, 100000000
+* output: True
+
+**Program will not take words or punctuation**
+* input: word!
+* output: "Please enter only numbers"
+
+**Program will return a list from 1 to the users number input**
+* input: 5
+* output: [1, 2, 3, 4, 5]
+
+**Program will return all numbers divisible 3 with "Ping"**
+* input: 5
+* output: [1, 2, Ping, 4, 5]
+
+**Program will return all numbers divisible by 5 with "Pong"**
+* input: 6
+* output: [1, 2, Ping, 4, Pong, 6]
+
+**Program will return all numbers divisible by 15 with "Ping Pong**
+* input: 16
+* output: [1,2,Ping,4,Pong,Ping,7,8,Ping,Pong,11,Ping,13,14,Ping-Pong,16]
+
 
 
 ### License
