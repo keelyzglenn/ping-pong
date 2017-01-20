@@ -6,10 +6,9 @@ var returnNumber = function(userInput) {
   var userInputSplit = userInput.toString().split("");
 
   var count = function (x, y) {
-    var start = 0;
     var y = userInput
     var numbers = [];
-    for (var i = 0; i < y; i++) {
+    for (var i = 1; i < y; i++) {
       numbers.push(i);
     }
     return numbers;
