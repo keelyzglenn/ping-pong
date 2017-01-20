@@ -16,7 +16,7 @@ This webpage will take a users numerical input and return all the numerical valu
 ## Setup/Installation Requirements
 
 * Clone repository from GitHub
-* LINK
+* https://keelyzglenn.github.io/ping-pong/
 
 
 ## Technologies Used
